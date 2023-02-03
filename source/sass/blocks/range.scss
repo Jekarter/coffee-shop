@@ -1,0 +1,80 @@
+.product-filter__price {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  height: 35px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--background-gray);
+  border-radius: 3px;
+}
+
+.scale {
+  height: 2px;
+  background: $light-gray;
+}
+
+.bar {
+  width: 30%;
+  margin-left: 20%;
+}
+
+
+element.style {
+  left: 20%;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 2px solid $primary-lighter;
+  background-color: $base-white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 20%;
+}
+
+.range-controls .toggle-max {
+  left: 70%;
+}
+
+.bar {
+  width: 60%;
+  height: 4px;
+  background: $primary-lighter;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls input {
+  width: 78px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #333;
+  border-radius: 3px;
+  background: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  border: 2px solid #9070ec;
+}

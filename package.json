@@ -53,17 +53,5 @@
   "engines": {
     "node": ">=16.13.0"
   },
-  "type": "module",
-  "description": "1. [Установить node.js](https://nodejs.org/download/release/latest-v16.x/). Сборка работает на 16 версии 2. С помощью терминала установить зависимости - `npm ci` 3. Запустить сборку - `npm start` 4. Для проверки на ошибки запустить `npm run lint`",
-  "main": "gulpfile.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jekarter/coffee-shop.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jekarter/coffee-shop/issues"
-  },
-  "homepage": "https://github.com/Jekarter/coffee-shop#readme"
+  "type": "module"
 }

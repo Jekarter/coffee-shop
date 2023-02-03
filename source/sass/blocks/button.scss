@@ -1,0 +1,33 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px;
+  background-color: $base-primary;
+  color: $base-white;
+}
+
+.button:hover {
+  background-color: $primary-lighter;
+}
+
+.button:active {
+  background-color: $primary-darker;
+}
+
+.button:disabled {
+  background-color: $base-gray;
+}
+
+.button-clear {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px;
+  background-color: $base-white;
+  color: $base-primary;
+}
+
+.button-order {
+  height: 40px;
+}

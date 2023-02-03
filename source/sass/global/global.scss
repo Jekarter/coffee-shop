@@ -1,1 +1,92 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  min-height: 100%;
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.page {
+  height: 100%;
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media (min-width: $mobile-width) {
+  body {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .page {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.extra-description {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $base-primary
+}
+
+input, textarea, select, button {
+  font: inherit;
+}
