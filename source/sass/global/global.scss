@@ -15,7 +15,9 @@ body {
   margin: 0;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: "Montserrat Bold", "Arial", sans-serif;
 }
 
@@ -43,6 +45,7 @@ ul {
     line-height: 32px;
   }
 }
+
 @media (min-width: $mobile-width) {
   body {
     font-size: 20px;
@@ -84,9 +87,18 @@ ul {
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: $base-primary
+  color: $base-primary;
 }
 
-input, textarea, select, button {
+.actual-price {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+input,
+select,
+button {
   font: inherit;
 }

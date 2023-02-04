@@ -1,8 +1,10 @@
 .header {
-  padding: 10px 15px;
-  height: 60px;
+  padding: 10px 20px;
+  height: 40px;
 }
 
-.header-logo {
-  padding: 10px;
+@media (max-width: $mobile-width) {
+  .header-margin {
+    margin-bottom: 230px;
+  }
 }

@@ -1,0 +1,14 @@
+.swiper {
+  width: auto;
+  height: 650px;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: $base-primary;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  font-size: 18px;
+}

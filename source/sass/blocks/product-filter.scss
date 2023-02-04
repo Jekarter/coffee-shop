@@ -1,9 +1,10 @@
 .product-filter {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 35px;
 }
 
-.product-filter__price-title {
+.price-title {
   font-family: "Montserrat Bold", "Arial", sans-serif;
   font-weight: 600;
   padding: 0;
@@ -19,4 +20,12 @@
 .product-filter__country-item {
   position: relative;
   margin-bottom: 23px;
+}
+
+.product-filter__country-item {
+  padding-left: 25px;
+}
+
+.product-filter__country {
+  margin-bottom: 30px;
 }

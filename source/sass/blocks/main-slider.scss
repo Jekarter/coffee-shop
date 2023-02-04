@@ -2,18 +2,19 @@
   background-color: $flat-white;
 }
 
-.main-slider__slider-item--img {
+.main-slider__item-img {
   margin-right: auto;
   margin-left: auto;
 }
 
-.main-slider__slider-item--description {
+.main-slider__item-description {
   text-align: center;
 }
 
 .slider-title {
   font-family: "Montserrat Bold", "Arial", sans-serif;
   padding: 10px;
+  margin-bottom: 0;
 }
 
 .main-slider__product-description {
@@ -21,11 +22,7 @@
   padding: 10px;
 }
 
-.slider-title {
-  margin-bottom: 0;
-}
-
-.main-slider__price {
+.main-slider__order-price {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,11 +36,7 @@
   padding-right: 5px;
 }
 
-.main-slider__new-price {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
+.main-slider__price {
   padding-right: 20px;
 }
 
