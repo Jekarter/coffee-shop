@@ -29,3 +29,70 @@
 .product-filter__country {
   margin-bottom: 30px;
 }
+
+@media (max-width: $only-mobile-width) {
+  .product-filter__price {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-filter__price {
+    max-width: 220px;
+  }
+
+  .product-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .product-filter__milk {
+    width: 210px;
+  }
+
+  .product-filter__country-list {
+    width: 197px;
+  }
+
+  .product-filter__country-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .button-filter {
+    margin-right: 15px;
+  }
+
+  .button-clear {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-filter {
+    display: grid;
+    grid-column: 1 / 1;
+  }
+
+  .button-filter,
+  .button-clear {
+    margin: 0;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .product-filter__country-buttons {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    justify-content: space-between;
+  }
+
+  .product-filter {
+    display: block;
+    padding-right: 30px;
+  }
+}

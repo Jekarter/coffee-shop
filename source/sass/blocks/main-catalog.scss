@@ -6,3 +6,31 @@
 .main-catalog__caption {
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+
+  .main-catalog__caption {
+    padding: 20px;
+  }
+
+  .main-catalog__filter {
+    padding: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__filter {
+    display: grid;
+    grid-template-columns: 348px 1fr;
+    padding: 40px;
+  }
+
+  .main-catalog__products {
+    display: grid;
+    grid-column: 2 / 2;
+  }
+}

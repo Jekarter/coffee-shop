@@ -20,13 +20,17 @@
   padding: 20px;
 }
 
-@media (max-width: $mobile-width) {
+.main-menu__main-title {
+  display: none;
+}
+
+@media (max-width: $only-mobile-width) {
   .main-menu__list-main {
     display: none;
   }
 }
 
-@media (min-width: $mobile-width) {
+@media (min-width: $tablet-width) {
   .main-menu__item-button {
     display: none;
   }
@@ -48,5 +52,28 @@
 
   .main-menu__login-text {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu__main-title {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    width: 126px;
+    margin-left: 20px;
+  }
+
+  .main-menu__login-text {
+    display: block;
+  }
+
+  .main-menu__item-login,
+  .main-menu__item-cart {
+    display: flex;
+  }
+
+  .main-menu__login-text {
+    margin-left: 8px;
   }
 }

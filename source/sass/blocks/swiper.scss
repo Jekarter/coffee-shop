@@ -12,3 +12,32 @@
 .swiper .swiper-button-prev::after {
   font-size: 18px;
 }
+
+.swiper-scrollbar {
+  display: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .swiper {
+    height: 828px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .swiper-scrollbar {
+    display: block;
+  }
+
+  .swiper .swiper-horizontal>.swiper-scrollbar,
+  .swiper .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 202px;
+    background-color: $base-white;
+    bottom: 70px;
+    left: 600px;
+  }
+
+  .swiper .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
+    width: 62px;
+    background-color: $base-primary;
+  }
+}

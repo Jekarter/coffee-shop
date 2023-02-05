@@ -3,8 +3,14 @@
   height: 40px;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $only-mobile-width) {
   .header-margin {
     margin-bottom: 230px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header  {
+      padding: 20px 20px;
   }
 }

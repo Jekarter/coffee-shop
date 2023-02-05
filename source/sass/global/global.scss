@@ -4,7 +4,6 @@ a {
 }
 
 img {
-  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -29,7 +28,7 @@ ul {
   height: 100%;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $only-mobile-width) {
   body {
     font-size: 14px;
     line-height: 20px;
@@ -46,7 +45,7 @@ ul {
   }
 }
 
-@media (min-width: $mobile-width) {
+@media (min-width: $tablet-width) {
   body {
     font-size: 20px;
     line-height: 32px;

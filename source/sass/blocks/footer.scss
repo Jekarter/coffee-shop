@@ -26,7 +26,6 @@
 .footer__media,
 .footer__contacts {
   padding: 0 20px;
-  border-bottom: 1px solid $base-secondary;
 }
 
 .footer__nav-list,
@@ -90,5 +89,48 @@
 
   &:active {
     color: $primary-darker;
+  }
+}
+
+@media (max-width: $only-mobile-width) {
+  .footer__nav,
+  .footer__media,
+  .footer__contacts {
+    border-bottom: 1px solid $base-secondary;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer__navigation-wrapper {
+    display: flex;
+  }
+
+  .footer__contacts-list {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer__nav,
+  .footer__media,
+  .footer__contacts {
+    width: 223px;
+  }
+
+  .footer__navigation-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .footer__copyright-logo {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .footer__copyright {
+    padding-bottom: 40px;
   }
 }

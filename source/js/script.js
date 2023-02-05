@@ -28,10 +28,12 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  oneWayMovement: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -43,5 +45,11 @@ const swiper = new Swiper('.swiper', {
   // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
   },
 });

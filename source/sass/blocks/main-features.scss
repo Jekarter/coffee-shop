@@ -11,3 +11,45 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .main-features {
+    margin-bottom: 100px;
+  }
+
+  .main-features__list {
+    font-size: 16px;
+    line-height: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 30px;
+  }
+
+  .main-features__item {
+    display: flex;
+  }
+
+  .main-features__description {
+    width: 267px;
+    text-align: start;
+  }
+
+  .main-features__description-title {
+    margin-bottom: 10px;
+  }
+
+  .main-features__description-subtitle {
+    margin: 0;
+  }
+
+  .main-features__icon {
+    margin-top: 30px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-features__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
