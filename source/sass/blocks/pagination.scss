@@ -1,4 +1,5 @@
 .pagination__list {
+  list-style: none;
   display: flex;
   align-items: center;
   padding: 0;
@@ -26,11 +27,28 @@
   color: $base-black;
 }
 
+.pagination__list-item:not(.pagination__current-item) {
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+  }
+}
+
 @media (max-width: $only-mobile-width) {
   .pagination__list {
     max-width: 280px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 9px;
   }
 
   .pagination__item-back,
@@ -44,32 +62,32 @@
   .pagination__link-forward::after {
     position: absolute;
     content: "";
-    width: 8px;
+    width: 7px;
     height: 2px;
     background-color: $base-primary;
   }
 
   .pagination__link-back::before {
-    top: 22px;
-    right: 15px;
+    top: 20px;
+    right: 18px;
     transform: rotate(45deg);
   }
 
   .pagination__link-back::after {
-    top: 17px;
-    right: 15px;
+    top: 16px;
+    right: 18px;
     transform: rotate(-45deg);
   }
 
   .pagination__link-forward::before {
-    top: 18px;
-    right: 13px;
+    top: 16px;
+    right: 15px;
     transform: rotate(45deg);
   }
 
   .pagination__link-forward::after {
-    top: 23px;
-    right: 13px;
+    top: 20px;
+    right: 15px;
     transform: rotate(-45deg);
   }
 }
@@ -77,16 +95,20 @@
 @media (min-width: $tablet-width) {
   .pagination__list {
     justify-content: flex-end;
+    height: 40px;
+    margin: 0;
   }
+
   .pagination__list-item-back,
   .pagination__list-item-forward {
     margin: 0;
-    width: 150px;
+    width: 141px;
+    font-size: 14px;
   }
 
   .pagination__item-back,
   .pagination__item-forward {
-   margin: 0;
+    margin: 0;
   }
 
   .pagination__list-item-back,
@@ -101,5 +123,11 @@
 
   .pagination__current-item {
     margin: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination__list {
+    margin-right: 20px;
   }
 }

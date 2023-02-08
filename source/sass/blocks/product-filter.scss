@@ -19,36 +19,60 @@
 .product-filter__milk-item,
 .product-filter__country-item {
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .product-filter__country-item {
-  padding-left: 25px;
+  padding-left: 32px;
 }
 
 .product-filter__country {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.product-filter__milk-list {
+  padding-left: 32px;
+  margin-bottom: 24px;
+}
+
+.product-filter__country-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.product-filter__price-title {
+  margin-bottom: 5px;
 }
 
 @media (max-width: $only-mobile-width) {
   .product-filter__price {
     max-width: 280px;
   }
+
+  .product-filter {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .product-filter {
+    margin-bottom: 4px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-filter__milk-item {
+    padding-right: 10px;
+  }
+
   .product-filter__price {
     max-width: 220px;
   }
 
-  .product-filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .product-filter__milk {
-    width: 210px;
+    width: 236px;
+    margin-left: 12px;
+    margin-right: 10px;
   }
 
   .product-filter__country-list {
@@ -56,24 +80,29 @@
   }
 
   .product-filter__country-buttons {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24%;
   }
 
-  .button-filter {
-    margin-right: 15px;
+  .product-filter__price-title {
+    margin-bottom: 5px;
   }
 
-  .button-clear {
-    margin-left: 15px;
+  .product-filter__milk-list {
+    padding-left: 35px;
+  }
+
+  .product-filter__milk-item,
+  .product-filter__country-item {
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-filter {
-    display: grid;
-    grid-column: 1 / 1;
+    display: block;
+    padding-right: 30px;
   }
 
   .button-filter,
@@ -89,10 +118,20 @@
     font-size: 14px;
     line-height: 24px;
     justify-content: space-between;
+    margin: 0;
   }
 
-  .product-filter {
-    display: block;
-    padding-right: 30px;
+  .product-filter__milk {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .product-filter__price {
+    max-width: 318px;
+    margin-bottom: 28px;
+  }
+
+  .product-filter__country {
+    margin-bottom: 20px;
   }
 }

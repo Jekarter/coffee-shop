@@ -1,11 +1,49 @@
 .swiper {
   width: auto;
-  height: 650px;
+  height: 656px;
 }
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
   color: $base-primary;
+  top: 0;
+  height: 700px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, $base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:disabled {
+    background-color: $base-gray;
+  }
+}
+
+
+.swiper .swiper-button-prev {
+  left: -4px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, $base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.swiper .swiper-button-next {
+  right: -4px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(-90deg, $base-white 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
 }
 
 .swiper .swiper-button-next::after,
@@ -21,23 +59,58 @@
   .swiper {
     height: 828px;
   }
+
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    color: $base-primary;
+    top: 23px;
+    height: 618px;
+    padding: 10px 25px;
+  }
+
+  .swiper .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper .swiper-button-next {
+    right: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .swiper {
+    height: 714px;
+  }
+
   .swiper-scrollbar {
     display: block;
   }
 
-  .swiper .swiper-horizontal>.swiper-scrollbar,
+  .swiper .swiper-horizontal > .swiper-scrollbar,
   .swiper .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: 202px;
     background-color: $base-white;
-    bottom: 70px;
-    left: 600px;
+    bottom: 11px;
+    left: 620px;
   }
 
   .swiper .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag {
     width: 62px;
     background-color: $base-primary;
+  }
+
+  .swiper .swiper-button-prev,
+  .swiper .swiper-button-next {
+    width: 80px;
+    top: 21px;
+    height: 718px;
+  }
+
+  .swiper .swiper-button-next {
+    right: -4px;
+  }
+
+  .swiper .swiper-button-prev {
+    left: 0;
   }
 }

@@ -1,0 +1,58 @@
+.noUi-connect {
+  background-color: $primary-lighter;
+  height: 3px;
+}
+
+.noUi-horizontal {
+  height: 2px;
+}
+
+.noUi-handle {
+  border-radius: 50%;
+  border: 2px solid $primary-lighter;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -11px;
+}
+
+.slider-handles {
+  margin-top: 30px;
+}
+
+.price-controls {
+  margin-top: 36px;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none;
+}
+
+.noUi-target {
+  border: none;
+  box-shadow: none;
+  background-color: $light-gray;
+  height: 2px;
+}
+
+.noUi-horizontal .noUi-handle  {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .noUi-target {
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    right: -7px;
+  }
+
+  .slider-handles {
+    margin-top: 25px;
+  }
+}

@@ -2,12 +2,12 @@
   &::before {
     position: absolute;
     content: "";
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     left: -35px;
-    top: -3px;
+    top: 0;
     background-color: $base-white;
-    border: 2px solid $base-primary;
+    border: 2px solid $base-gray;
     border-radius: 50%;
   }
 }
@@ -20,12 +20,31 @@
   cursor: pointer;
 }
 
+.control-radio:checked + label::before {
+  border: 2px solid $base-primary;
+}
+
+.control-radio:hover + label::after {
+  position: absolute;
+  content: "";
+  background-color: $primary-opacity;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: -31px;
+}
+
+.control-radio:hover + label::before {
+  border: 2px solid $base-primary;
+}
+
 .control-radio:checked + label::after {
   background-color: $base-primary;
   width: 16px;
   height: 16px;
-  top: 2px;
-  left: -30px;
+  top: 4px;
+  left: -31px;
 }
 
 .control-checkbox-name {
@@ -33,10 +52,10 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -39px;
+    left: -21px;
     box-sizing: border-box;
-    width: 56px;
-    height: 28px;
+    width: 43px;
+    height: 24px;
     border-radius: 25%/50%;
     vertical-align: top;
     background: $base-gray;
@@ -46,10 +65,10 @@
     content: "";
     position: absolute;
     top: 2px;
-    left: -37px;
+    left: -18px;
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: $base-white;
     transition: 0.5s;
@@ -63,5 +82,18 @@
 .control-checkbox:checked + .control-checkbox-name::after {
   content: "";
   position: absolute;
-  transform: translateX(28px);
+  transform: translateX(18px);
+}
+
+.control-checkbox:hover + .control-checkbox-name::before {
+  background-color: $primary-opacity;
+  border: 2px solid $primary-lighter;
+}
+
+.control-checkbox:disabled + .control-checkbox-name::before {
+  background-color: $light-gray;
+}
+
+.control-checkbox:disabled:checked + .control-checkbox-name::after {
+  background-color: $base-gray;
 }

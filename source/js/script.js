@@ -2,12 +2,10 @@ const mainMenu = document.querySelector('.main-menu__list-main');
 const menuToggle = document.querySelector('.main-menu__toggle');
 const header = document.querySelector('.header');
 
-mainMenu.classList.remove('main-menu--nojs');
 header.classList.remove('header-margin');
-mainMenu.classList.remove('main-menu-opened');
-mainMenu.classList.remove('main-menu__toggle--opened');
+menuToggle.classList.remove('mobile-menu-icon-nojs')
+mainMenu.classList.remove('main-menu--nojs', 'main-menu-opened', 'main-menu__toggle--opened');
 mainMenu.classList.add('main-menu-closed')
-
 
 menuToggle.addEventListener('click', () => {
   if (mainMenu.classList.contains('main-menu-closed')) {
@@ -21,35 +19,4 @@ menuToggle.addEventListener('click', () => {
     header.classList.remove('header-margin');
     menuToggle.classList.remove('main-nav__toggle--opened')
   }
-});
-
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  oneWayMovement: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
 });

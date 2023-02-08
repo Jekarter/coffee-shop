@@ -1,4 +1,4 @@
-a {
+.page a {
   text-decoration: none;
   color: inherit;
 }
@@ -14,14 +14,10 @@ body {
   margin: 0;
 }
 
-h2,
-h3,
-h4 {
+.page-main h2,
+.page-main h3,
+.page-main h4 {
   font-family: "Montserrat Bold", "Arial", sans-serif;
-}
-
-ul {
-  list-style: none;
 }
 
 .page {
@@ -34,12 +30,12 @@ ul {
     line-height: 20px;
   }
 
-  h2 {
+  .page-main h2 {
     font-size: 24px;
     line-height: 36px;
   }
 
-  h3 {
+  .page-main h3 {
     font-size: 18px;
     line-height: 32px;
   }
@@ -51,12 +47,12 @@ ul {
     line-height: 32px;
   }
 
-  h2 {
+  .page-main h2 {
     font-size: 42px;
     line-height: 64px;
   }
 
-  h3 {
+  .page-main h3 {
     font-size: 24px;
     line-height: 36px;
   }

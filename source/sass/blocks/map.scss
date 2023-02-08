@@ -1,0 +1,29 @@
+.map-nojs {
+  display: none;
+}
+
+@media (max-width: $only-mobile-width) {
+  .map-leaflet {
+    height: 420px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__map {
+    margin-bottom: 17px;
+  }
+
+  .map-leaflet {
+    height: 480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__map {
+    margin-bottom: 0;
+  }
+
+  .map-leaflet {
+    height: 540px;
+  }
+}

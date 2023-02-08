@@ -19,20 +19,50 @@
   background-color: $base-gray;
 }
 
-.button-filter {
+.button-filter,
+.button-clear {
+  font-size: 14px;
+  line-height: 24px;
   margin-bottom: 25px;
+  width: 160px;
+  height: 45px;
+  padding: 0;
 }
 
 .button-clear {
-  width: 200px;
   background-color: $base-white;
   color: $base-primary;
 }
 
 .button-order {
   height: 40px;
+  padding: 0 24px;
 }
 
 .product-filter__country-buttons {
   text-align: center;
+}
+
+@media (max-width: $only-mobile-width) {
+  .product-filter__country-buttons {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button-order {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .button-clear,
+  .button-filter {
+    margin-top: 9px;
+    margin-bottom: 25px;
+    margin-left: 6px;
+    margin-right: 20px;
+    width: 146px;
+    height: 40px;
+  }
 }

@@ -1,0 +1,14 @@
+.footer__nav-item {
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.footer__nav-list {
+  list-style: none;
+}

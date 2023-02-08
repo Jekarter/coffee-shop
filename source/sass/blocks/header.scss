@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 20px;
+  padding: 10px 0 10px 20px;
   height: 40px;
 }
 
@@ -10,7 +10,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header  {
-      padding: 20px 20px;
+  .header {
+    padding: 20px 20px;
+  }
+
+  .header-logo {
+    padding-right: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-logo {
+    padding-left: 22px;
+    padding-right: 0;
   }
 }
