@@ -15,6 +15,8 @@
 
 .noUi-horizontal .noUi-handle {
   top: -11px;
+  width: 24px;
+  height: 24px;
 }
 
 .slider-handles {
@@ -25,8 +27,8 @@
   margin-top: 36px;
 }
 
-.noUi-handle:after,
-.noUi-handle:before {
+.noUi-handle::after,
+.noUi-handle::before {
   display: none;
 }
 
@@ -35,11 +37,6 @@
   box-shadow: none;
   background-color: $light-gray;
   height: 2px;
-}
-
-.noUi-horizontal .noUi-handle  {
-  width: 24px;
-  height: 24px;
 }
 
 @media (min-width: $tablet-width) {

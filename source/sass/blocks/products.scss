@@ -155,6 +155,7 @@
 
   .products__sorting {
     width: 1011px;
+    align-items: flex-start;
   }
 
   .products__sorting-title {
@@ -164,9 +165,5 @@
 
   .products__sorting-list {
     height: 23px;
-  }
-
-  .products__sorting {
-    align-items: flex-start;
   }
 }
