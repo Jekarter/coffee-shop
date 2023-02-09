@@ -46,6 +46,7 @@
 @media (min-width: $tablet-width) {
   .footer__navigation-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .footer__title {

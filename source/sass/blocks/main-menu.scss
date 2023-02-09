@@ -1,6 +1,6 @@
 .main-menu__wrapper {
   display: flex;
-  height: 40px;
+  min-height: 40px;
   align-items: center;
 }
 
@@ -85,23 +85,27 @@
     display: none;
   }
 
+  .main-menu__item {
+    padding: 32px 0px;
+  }
+
   .main-menu__current-page {
     border-bottom: 2px solid $base-primary;
   }
 
   .main-menu__list-main,
   .main-menu__list-user {
+    display: flex;
     padding: 0;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 16px;
-    display: flex;
+    flex-wrap: wrap;
   }
 
   .main-menu__list-main {
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .main-menu__login-text {
@@ -127,10 +131,6 @@
   .main-menu__login-text {
     display: block;
     margin-left: 8px;
-  }
-
-  .main-menu__item {
-    padding: 0;
   }
 
   .main-menu__item-login,

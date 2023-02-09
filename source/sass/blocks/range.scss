@@ -5,49 +5,6 @@
   border: none;
 }
 
-.range-controls {
-  position: relative;
-  height: 35px;
-  padding-top: 27px;
-  padding-right: 0;
-  padding-left: 11px;
-  background-color: var(--background-gray);
-  border-radius: 3px;
-}
-
-.scale {
-  height: 2px;
-  background: $light-gray;
-}
-
-.bar {
-  margin-left: 0;
-  width: 84%;
-  height: 4px;
-  background: $primary-lighter;
-}
-
-.range-controls .toggle-min {
-  left: 20%;
-}
-
-.range-controls .toggle {
-  position: absolute;
-  top: 16px;
-  left: -1px;
-  width: 22px;
-  height: 22px;
-  padding: 0;
-  border: 2px solid $primary-lighter;
-  background-color: $base-white;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.range-controls .toggle-max {
-  left: 84%;
-}
-
 .price-controls {
   display: flex;
   justify-content: space-between;
@@ -69,27 +26,6 @@
   }
 }
 
-.toggle:hover::after,
-.toggle:focus::after,
-.toggle:active::after {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  top: 3px;
-  right: 3px;
-}
-
-.toggle:hover::after,
-.toggle:focus::after {
-  background-color: $primary-opacity;
-}
-
-.toggle:active::after {
-  background-color: $base-primary;
-}
-
 @media (max-width: $only-mobile-width) {
   .price-controls input {
     width: 80px;
@@ -100,23 +36,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .range-controls .toggle {
-    top: 12px;
-    left: 6px;
-  }
-
-  .range-controls .toggle-max {
-    left: 79%;
-  }
-
-  .range-controls {
-    padding-top: 23px;
-  }
-
-  .scale {
-    width: 219px;
-  }
-
   .price-controls {
     margin-top: 41px;
   }
@@ -137,23 +56,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .range-controls .toggle {
-    top: 14px;
-    left: 0;
-  }
-
-  .scale {
-    width: 308px;
-  }
-
-  .range-controls .toggle-max {
-    left: 86%;
-  }
-
-  .bar {
-    width: 86%;
-  }
-
   .price-controls input {
     width: 96px;
     margin-left: 2px;

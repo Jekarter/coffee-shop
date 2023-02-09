@@ -1,4 +1,4 @@
-var snapSlider = document.getElementById('slider-snap');
+const snapSlider = document.getElementById('slider-snap');
 
 noUiSlider.create(snapSlider, {
     start: [0, 900],
@@ -10,11 +10,11 @@ noUiSlider.create(snapSlider, {
     }
 });
 
-var snapValues = [
+const snapValues = [
   document.getElementById('lower'),
   document.getElementById('upper')
 ];
 
 snapSlider.noUiSlider.on('update', function( values, handle ) {
-  snapValues[handle].value = values[handle];
+  snapValues[handle].value = Math.round(values[handle]);
 });
